@@ -2,73 +2,78 @@ export default function Home() {
   return (
     <main
       style={{
+        minHeight: "100vh",
         background: "#0f0f0f",
         color: "white",
-        minHeight: "100vh",
-        padding: "80px 20px",
-        fontFamily: "Arial, sans-serif",
+        fontFamily: "sans-serif",
+        padding: "40px 20px",
         textAlign: "center",
       }}
     >
       {/* HERO */}
-      <h1 style={{ fontSize: "48px", marginBottom: "20px" }}>
+      <h1
+        style={{
+          fontSize: "48px",
+          fontWeight: "bold",
+          marginBottom: "20px",
+        }}
+      >
         Break Addiction. Build Discipline.
       </h1>
 
       <p
         style={{
-          fontSize: "20px",
-          opacity: 0.8,
-          maxWidth: "700px",
-          margin: "0 auto 40px auto",
-          lineHeight: "1.6",
+          maxWidth: "600px",
+          margin: "0 auto 30px auto",
+          fontSize: "18px",
+          color: "#bbbbbb",
         }}
       >
         Résat helps you eliminate triggers, control urges, and stay consistent
         every single day.
       </p>
 
-      <a
-        href="https://github.com/gnoob8144-creator/REsat-app/releases"
-        style={{
-          background: "#22c55e",
-          padding: "16px 32px",
-          borderRadius: "10px",
-          color: "black",
-          fontWeight: "bold",
-          textDecoration: "none",
-          fontSize: "18px",
-        }}
-      >
-        Download Android App
-      </a>
-
-      {/* WHY SECTION */}
-      <div style={{ marginTop: "120px" }}>
-        <h2 style={{ fontSize: "32px", marginBottom: "20px" }}>
-          Why Résat?
-        </h2>
-
-        <p
+      <a href="/resat.apk" download>
+        <button
           style={{
-            opacity: 0.8,
+            background: "#22c55e",
+            border: "none",
+            padding: "16px 28px",
+            borderRadius: "10px",
             fontSize: "18px",
-            marginBottom: "30px",
+            cursor: "pointer",
+            fontWeight: "bold",
           }}
         >
-          Motivation fades. Discipline doesn’t.
-        </p>
+          Download Android App
+        </button>
+      </a>
 
-        <div style={{ fontSize: "18px", lineHeight: "1.8" }}>
-          ✓ Website Blocking <br />
-          ✓ Urge Control Tools <br />
-          ✓ Streak Tracking <br />
-          ✓ Discipline System
+      {/* FEATURES */}
+      <div style={{ marginTop: "80px" }}>
+        <h2 style={{ fontSize: "32px", marginBottom: "30px" }}>
+          Why Résat Works
+        </h2>
+
+        <div
+          style={{
+            maxWidth: "700px",
+            margin: "auto",
+            textAlign: "left",
+            fontSize: "18px",
+            lineHeight: "2",
+          }}
+        >
+          ✓ Block adult websites instantly<br />
+          ✓ Control urges before relapse<br />
+          ✓ Track your streak progress<br />
+          ✓ Build daily discipline habits<br />
+          ✓ Works offline and private
         </div>
       </div>
 
       {/* SCREENSHOTS */}
-      <div style={{ marginTop: "120px" }}>
+      <div style={{ marginTop: "80px" }}>
         <h2 style={{ fontSize: "32px", marginBottom: "40px" }}>
           App Preview
         </h2>
@@ -99,6 +104,41 @@ export default function Home() {
             }}
           />
         </div>
+      </div>
+
+      {/* SECOND DOWNLOAD */}
+      <div style={{ marginTop: "80px" }}>
+        <h2 style={{ marginBottom: "20px" }}>
+          Start Your Discipline Journey Today
+        </h2>
+
+        <a href="/resat.apk" download>
+          <button
+            style={{
+              background: "#22c55e",
+              border: "none",
+              padding: "16px 28px",
+              borderRadius: "10px",
+              fontSize: "18px",
+              cursor: "pointer",
+              fontWeight: "bold",
+            }}
+          >
+            Download Résat
+          </button>
+        </a>
+      </div>
+
+      {/* FOOTER */}
+      <div
+        style={{
+          marginTop: "100px",
+          fontSize: "14px",
+          color: "#888",
+        }}
+      >
+        <p>Résat App © 2026</p>
+        <p>Built to help people break addiction and build discipline.</p>
       </div>
     </main>
   );
